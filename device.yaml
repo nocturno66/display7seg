@@ -7,3 +7,5 @@ esp32:
   board: esp32dev
   framework:
     type: esp-idf
+
+#me encanta que los planes salgan bien
