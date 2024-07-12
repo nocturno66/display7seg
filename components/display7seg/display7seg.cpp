@@ -1,23 +1,24 @@
 #include "esphome/core/log.h"
-#include "empty_binary_output.h"
+#include "display7seg.h"
+#include <assert.h>
 
 namespace esphome {
-namespace empty_binary_output {
+namespace display7seg {
 
-static const char *TAG = "empty_binary_output.binary_output";
+static const char *TAG = "display7seg.binary_output";
 
-void EmptyBinaryOutput::setup(){
-
-}
-
-void EmptyBinaryOutput::write_state(bool state){
+void display7seg::setup(){
 
 }
 
-void EmptyBinaryOutput::dump_config() {
-    ESP_LOGCONFIG(TAG, "Custom binary output");
+void display7seg::write_state(bool state){
+
 }
 
-} //namespace empty_binary_output
+void display7seg::dump_config() {
+    ESP_LOGCONFIG(TAG, "display7seg");
+}
+
+} //namespace display7seg
 } //namespace esphome
 

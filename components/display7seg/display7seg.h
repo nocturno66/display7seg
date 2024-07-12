@@ -4,9 +4,9 @@
 #include "esphome/components/output/binary_output.h"
 
 namespace esphome {
-namespace empty_binary_output {
+namespace display7seg {
 
-class EmptyBinaryOutput : public output::BinaryOutput, public Component {
+class display7seg : public output::BinaryOutput, public Component {
  public:
   void setup() override;
   void write_state(bool state) override;
@@ -14,5 +14,5 @@ class EmptyBinaryOutput : public output::BinaryOutput, public Component {
 };
 
 
-} //namespace empty_binary_output
+} //namespace display7seg
 } //namespace esphome

@@ -3,14 +3,14 @@ import esphome.config_validation as cv
 from esphome.components import output
 from esphome.const import CONF_ID
 
-empty_binary_output_ns = cg.esphome_ns.namespace("empty_binary_output")
-EmptyBinaryOutput = empty_binary_output_ns.class_(
-    "EmptyBinaryOutput", output.BinaryOutput, cg.Component
+display7seg_ns = cg.esphome_ns.namespace("display7seg")
+display7seg = display7segns.class_(
+    "display7seg", output.BinaryOutput, cg.Component
 )
 
 CONFIG_SCHEMA = output.BINARY_OUTPUT_SCHEMA.extend(
     {
-        cv.Required(CONF_ID): cv.declare_id(EmptyBinaryOutput),
+        cv.Required(CONF_ID): cv.declare_id(display7seg),
     }
 ).extend(cv.COMPONENT_SCHEMA)
 
