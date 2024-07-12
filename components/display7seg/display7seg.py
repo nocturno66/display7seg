@@ -4,13 +4,13 @@ from esphome.components import output
 from esphome.const import CONF_ID
 
 display7seg_ns = cg.esphome_ns.namespace("display7seg")
-display7seg = display7segns.class_(
-    "display7seg", output.BinaryOutput, cg.Component
+Display7Seg = display7segns.class_(
+    "Display7Seg", output.BinaryOutput, cg.Component
 )
 
 CONFIG_SCHEMA = output.BINARY_OUTPUT_SCHEMA.extend(
     {
-        cv.Required(CONF_ID): cv.declare_id(display7seg),
+        cv.Required(CONF_ID): cv.declare_id(Display7Seg),
     }
 ).extend(cv.COMPONENT_SCHEMA)
 
